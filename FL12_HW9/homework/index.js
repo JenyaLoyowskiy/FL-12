@@ -24,7 +24,7 @@ console.log(convert('1', two, three, '4'));
 function executeforEach(array, callback){
     for(let element in array){
         if (array.hasOwnProperty(element)) {
-            callback(array[element], element);   
+            callback(array[element]);   
         }
     }
 }
@@ -79,7 +79,7 @@ console.log(makeListFromRange([two, seven]));
 
 function getArrayOfKeys(array, key){
     let result = [];
-    executeforEach(array, (element) => {
+    executeforEach(array, element => {
         element[key] && result.push(element[key])
     })
     return result;
