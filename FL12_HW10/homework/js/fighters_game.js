@@ -33,7 +33,7 @@ function Fighter(player){
             hp += health 
         },
         dealDamage: damage => {
-            hp -= damage 
+            hp - damage < 0 ? hp = 0 : hp -= damage
         },
         addWin: () => {
             console.log(`${name} has won!!!`)
