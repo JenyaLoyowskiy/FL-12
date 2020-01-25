@@ -1,0 +1,26 @@
+/* Todo: your styles go here*/
+.material-icons.folder{
+    color: orange;
+}
+.material-icons.file{
+    color: gray;
+    list-style-type: none;
+}
+li{
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+}
+li:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.padding-left{
+    padding-left: 40px;
+}
+.closed :not(:first-child){
+    display: none;
+}
+.empty{
+    font-style: italic;
+}
