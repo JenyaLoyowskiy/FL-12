@@ -101,7 +101,5 @@ Array.from(document.querySelectorAll('ul > li:first-of-type')).forEach(list => {
   list.addEventListener('click', () => {
     let parent = list.parentNode;
     parent.getAttribute('class') === 'closed' ? openFolder(parent) : closeFolder(parent);
-  }, {
-    capture: true
   });
 })
